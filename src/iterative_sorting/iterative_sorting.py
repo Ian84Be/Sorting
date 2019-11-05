@@ -11,20 +11,21 @@ def selection_sort( arr ):
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
-    swap = False
-    for i, val in enumerate(arr):
-        if i == len(arr)-1: 
-            break
-        left = arr[i]
-        right = arr[i+1]
-        if left > right:
-            arr[i] = right
-            arr[i+1] = left
-            swap = True
-    if swap == True:
-        return bubble_sort(arr)
-    else: 
-        return arr
+    while True:
+        swap = 0
+        for i, val in enumerate(arr):
+            if i == len(arr)-1: 
+                break
+            left = arr[i]
+            right = arr[i+1]
+            if left > right:
+                arr[i] = right
+                arr[i+1] = left
+                swap += 1
+        if swap > 0:
+            continue
+        else: break
+    return arr
 
 # STRETCH: implement the Count Sort function below
 def count_sort( arr, maximum=-1 ):
