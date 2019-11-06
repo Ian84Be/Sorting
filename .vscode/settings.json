@@ -1,0 +1,9 @@
+{
+	"python.pythonPath": "/Users/ianbe/.local/share/virtualenvs/Sorting-98PQvYqg/bin/python",
+	"python.linting.pylintEnabled": true,
+	"python.linting.enabled": true,
+	"[python]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4  
+	}
+}
